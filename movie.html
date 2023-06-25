@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Border Animation on Hover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Hind', sans-serif;
+        }
+
+        body {
+            background-color: #101820ff;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        a {
+            position: relative;
+            display: block;
+            width: 200px;
+            height: 40px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            animation: glow 0.2s 0.5s ease-in-out forwards;
+        }
+
+        a svg,
+        a svg rect {
+            width: 200px;
+            height: 40px;
+        }
+
+        a svg rect {
+            stroke: #fee715;
+            stroke-width: 5px;
+            fill: transparent;
+            stroke-dasharray: 100 320;
+            stroke-dashoffset: -274;
+            stroke-linecap: round;
+            transition: 0.5s all ease;
+        }
+
+        a:hover svg rect {
+            stroke-dasharray: 500;
+            stroke-dashoffset: 0;
+        }
+
+        a span {
+            font-size: 22px;
+            position: absolute;
+            top: 8%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 0px 0 #fee71500;
+            }
+            to {
+                box-shadow: 0 0 10px 0 #fee715ff;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">
+
+<font color="yellow"size="7">
+    <I>
+        $movie$
+    </I>
+</font>
+</h1>
+
+   <br>
+   <table align="center">
+    <tr>
+        <th>
+            <a href="index.html">
+                <svg>
+                    <rect rx="8px" ry="8px"></rect>
+                </svg>
+                 
+                <span>home</span>
+                
+            </a>
+        </th>
+
+    
+   
+
+    &nbsp;&nbsp;&nbsp;
+
+
+        <th>
+            <a href="movie.html">
+                <svg>
+                    <rect rx="8px" ry="8px"></rect>
+                </svg>
+                 
+                <span>movie store</span>
+                
+            </a>
+        </th>
+    </tr>
+    </table>
+
+    
+
+
+
+<br />
+
+<p align="center">
+
+<font color="lightgreen"size="4">
+@gmail.com
+</font>
+ 
+</p>
+
+<br><br><br>
+
+
+<h2 align="center"><font color="white">
+     !&nbsp;&nbsp;there are no movie to be donwload &nbsp;&nbsp;!
+    </font>
+</h2>
+<br>
+
+<p align="center">
+    <img src="sad.png"width="200px">
+</p>
+
+</body>
+</html>
